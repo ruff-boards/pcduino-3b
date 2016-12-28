@@ -1,0 +1,290 @@
+{
+    "version": "2.0",
+    "id": "pcduin-3b",
+    "model": "pcduin-3b",
+    "preloads": {
+        "gpio-2": "gpio-2/gpio",
+        "gpio-3": "gpio-3/gpio",
+        "adc-2": "adc-2/adc",
+        "adc-3": "adc-3/adc",
+        "adc-4": "adc-4/adc",
+        "adc-5": "adc-5/adc",
+        "pwm-5": "pwm-5/pwm",
+        "pwm-6": "pwm-6/pwm",
+        "pwm-9": "pwm-9/pwm",
+        "pwm-10": "pwm-10/pwm",
+        "pwm-11": "pwm-11/pwm",
+        "uart-0": "uart-0/uart"
+    },
+    "outputs": {
+        "gnd-0": "ground/gnd-0",
+        "gnd-1": "ground/gnd-1",
+        "gnd-2": "ground/gnd-2",
+        "vdd-0": "power/vdd-0",
+        "vdd-1": "power/vdd-1",
+        "gpio-2": "gpio-2/gpio",
+        "gpio-3": "gpio-3/gpio",
+        "adc-2": "adc-2/adc",
+        "adc-3": "adc-3/adc",
+        "adc-4": "adc-4/adc",
+        "adc-5": "adc-5/adc",
+        "pwm-5": "pwm-5/pwm",
+        "pwm-6": "pwm-6/pwm",
+        "pwm-9": "pwm-9/pwm",
+        "pwm-10": "pwm-10/pwm",
+        "pwm-11": "pwm-11/pwm",
+        "uart-0": "uart-0/uart",
+        "i2c-0": "i2c-0/i2c"
+    },
+    "devices": [
+        {
+            "id": "ground",
+            "outputs": {
+                "gnd-0": {
+                    "type": "ground"
+                },
+                "gnd-1": {
+                    "type": "ground"
+                },
+                "gnd-2": {
+                    "type": "ground"
+                }
+            }
+        },
+        {
+            "id": "power",
+            "outputs": {
+                "vdd-0": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "3.3v"
+                    }
+                },
+                "vdd-1": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                }
+            }
+        },
+        {
+            "id": "gpio-2",
+            "model": "pcduino-gpio",
+            "driver": "sys-gpio",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 2
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "gpio"
+                }
+            }
+        },
+        {
+            "id": "gpio-3",
+            "model": "pcduino-gpio",
+            "driver": "sys-gpio",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 3
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "gpio"
+                }
+            }
+        },
+        {
+            "id": "adc-2",
+            "model": "pcduino-adc",
+            "driver": "sys-adc",
+            "args": {
+                "channel": 2
+            },
+            "inputs": {},
+            "outputs": {
+                "adc": {
+                    "type": "adc"
+                }
+            }
+        },
+        {
+            "id": "adc-3",
+            "model": "pcduino-adc",
+            "driver": "sys-adc",
+            "args": {
+                "channel": 3
+            },
+            "inputs": {},
+            "outputs": {
+                "adc": {
+                    "type": "adc"
+                }
+            }
+        },
+        {
+            "id": "adc-4",
+            "model": "pcduino-adc",
+            "driver": "sys-adc",
+            "args": {
+                "channel": 4
+            },
+            "inputs": {},
+            "outputs": {
+                "adc": {
+                    "type": "adc"
+                }
+            }
+        },
+        {
+            "id": "adc-5",
+            "model": "pcduino-adc",
+            "driver": "sys-adc",
+            "args": {
+                "channel": 5
+            },
+            "inputs": {},
+            "outputs": {
+                "adc": {
+                    "type": "adc"
+                }
+            }
+        },
+        {
+            "id": "pwm-5",
+            "model": "pcduino-pwm",
+            "driver": "sys-pwm",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 5
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "pwm"
+                }
+            }
+        },
+        {
+            "id": "pwm-6",
+            "model": "pcduino-pwm",
+            "driver": "sys-pwm",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 6
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "pwm"
+                }
+            }
+        },
+        {
+            "id": "pwm-9",
+            "model": "pcduino-pwm",
+            "driver": "sys-pwm",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 9
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "pwm"
+                }
+            }
+        },
+        {
+            "id": "pwm-10",
+            "model": "pcduino-pwm",
+            "driver": "sys-pwm",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 10
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "pwm"
+                }
+            }
+        },
+        {
+            "id": "pwm-11",
+            "model": "pcduino-pwm",
+            "driver": "sys-pwm",
+            "inputs": {
+                "pin": {
+                    "type": "number",
+                    "args": {
+                        "pin": 11
+                    }
+                }
+            },
+            "outputs": {
+                "gpio": {
+                    "type": "pwm"
+                }
+            }
+        },
+        {
+            "id": "uart-0",
+            "model": "ruff-uart",
+            "driver": "sys-uart",
+            "inputs": {
+                "device": {
+                    "type": "string",
+                    "args": {
+                        "path": "/dev/ttyS1"
+                    }
+                }
+            },
+            "outputs": {
+                "uart" : {
+                    "type":"uart"
+                }
+            }
+        },
+        {
+            "id": "i2c-0",
+            "model": "ruff-i2c",
+            "driver": "sys-i2c",
+            "inputs": {
+                "bus": {
+                    "type": "number",
+                    "args": {
+                        "bus": 2
+                    }
+                }
+            },
+            "outputs": {
+                "i2c": {
+                    "type": "i2c"
+                }
+            }
+        }
+    ]
+}

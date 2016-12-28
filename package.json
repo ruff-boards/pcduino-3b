@@ -1,0 +1,13 @@
+{
+    "name": "pcduino-3b",
+    "version": "0.1.0",
+    "description": "pcDuino-3b board",
+    "author": "Ruff",
+    "ruff":  {
+        "dependencies": {
+        }
+    },
+	"engines": {
+		"ruff": ">=1.6.0 <2.0.0"
+	}
+}
