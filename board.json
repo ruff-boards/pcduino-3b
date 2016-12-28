@@ -1,7 +1,7 @@
 {
     "version": "2.0",
-    "id": "pcduin-3b",
-    "model": "pcduin-3b",
+    "id": "pcduino-3b",
+    "model": "pcduino-3b",
     "preloads": {
         "gpio-2": "gpio-2/gpio",
         "gpio-3": "gpio-3/gpio",

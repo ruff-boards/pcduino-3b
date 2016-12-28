@@ -1,13 +1,13 @@
-# Ruff Raspberry Pi 2
+# Ruff pcDuino-3b
 
-The board project is for [Raspberry Pi 2](https://rap.ruff.io/devices/rpi-2b).
+The board project is for [pcDuino-3b](https://rap.ruff.io/devices/pcduino-3b).
 
 ## Usage
 
 You can specify this board with `-b` while creating a project.
 
 ```bash
-rap init -b rpi-2b
+rap init -b pcduino-3b
 ```
 
 ## License
