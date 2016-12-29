@@ -173,7 +173,7 @@
                 }
             },
             "outputs": {
-                "gpio": {
+                "pwm": {
                     "type": "pwm"
                 }
             }
@@ -191,7 +191,7 @@
                 }
             },
             "outputs": {
-                "gpio": {
+                "pwm": {
                     "type": "pwm"
                 }
             }
@@ -209,7 +209,7 @@
                 }
             },
             "outputs": {
-                "gpio": {
+                "pwm": {
                     "type": "pwm"
                 }
             }
@@ -227,7 +227,7 @@
                 }
             },
             "outputs": {
-                "gpio": {
+                "pwm": {
                     "type": "pwm"
                 }
             }
@@ -245,7 +245,7 @@
                 }
             },
             "outputs": {
-                "gpio": {
+                "pwm": {
                     "type": "pwm"
                 }
             }
