@@ -1,5 +1,6 @@
 {
     "version": "2.0",
+    "featureVersion": "0.1",
     "id": "pcduino-3b",
     "model": "pcduino-3b",
     "preloads": {
@@ -82,7 +83,16 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "input": [
+                            "read",
+                            "interrupt"
+                        ],
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
@@ -100,7 +110,16 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "input": [
+                            "read",
+                            "interrupt"
+                        ],
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
