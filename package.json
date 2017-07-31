@@ -1,13 +1,21 @@
 {
     "name": "pcduino-3b",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "pcDuino-3b board",
     "author": "Ruff",
     "ruff":  {
+        "session-format": {
+            "address": {
+                "type": "string",
+                "description": "designate IP address",
+                "required": true,
+                "visible": true
+            }
+        },
         "dependencies": {
         }
     },
-	"engines": {
-		"ruff": ">=1.6.0 <2.0.0"
-	}
+    "engines": {
+        "ruff": ">=1.6.0 <2.0.0"
+    }
 }
